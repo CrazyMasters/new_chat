@@ -1,0 +1,371 @@
+.header-fake {
+    background-color: #62BA4F;
+    height: 7em;
+    width: 100%;
+
+}
+
+.slog-main {
+
+    width: 40px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.logo-status {
+    display: flex;
+    align-items: center;
+}
+
+.main-header p {
+    margin-left: 8px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.chat-box_container {
+    background-color: white;
+    width: 90% !important;
+    max-height: 94vh;
+    margin: -80px auto 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex !important;
+    justify-content: stretch;
+    padding: 0 !important;
+}
+
+.chat-bg {
+    background-color: rgb(227, 226, 222);
+    height: 100vh;
+}
+
+.text-form {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.chat-item {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    padding: 5px 10px !important;
+}
+
+.chat-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.chat-block {
+    width: 30%;
+    overflow: auto;
+}
+
+.chat-img img {
+    border-radius: 50% !important;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.chat-img img {
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.mess-block {
+    width: 70% !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.mess-header {
+    height: 10%;
+}
+
+.mess-main {
+    height: 80%;
+}
+
+.mess-footer {
+    height: 10%;
+}
+
+
+.bell {
+    width: 15px;
+    height: 15px;
+}
+
+.bell-slash {
+    width: 18px;
+    height: 18px;
+}
+
+.subscribe-btn {
+    margin-right: 5%;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.name-form {
+    word-break: break-all;
+    overflow: hidden;
+    height: 40px;
+}
+
+.name-zone {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.unread {
+    display: flex;
+    height: 100%;
+    width: 15%;
+    min-width: 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px
+}
+
+.unread-block {
+    background-color: #62BA4F;
+    color: white;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-right: 10%;
+}
+
+.unread_block_reports {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border-radius: 50%;
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-right: 10%;
+}
+
+.unread-zone {
+
+}
+
+.connections-status-green {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: 6px;
+}
+
+.connections-status-red {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 6px;
+}
+
+.search {
+    overflow: auto;
+    resize: none;
+    width: 96%;
+    height: 80%;
+    background: #f6f6f6;
+    border: 1px solid #cecece;
+    border-radius: 8px;
+    padding: 8px 0 8px 10px;
+}
+
+.search-block {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.more-button {
+    width: 100% !important;
+}
+
+.bell {
+    background-image: url('../../../../media/close_delete.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    transition: all linear 0.17s;
+    margin-left: 10px;
+}
+
+.bell:hover {
+    background-image: url('../../../../media/close_delete_hover.svg');
+}
+
+.modal_window_delete_chat {
+    box-shadow: 0px 0px 3px gray;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 200px;
+    width: 320px;
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 999;
+}
+
+.modal_window_delete_chat_wrapper {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    left: 0px;
+    background: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.3;
+}
+
+.btn_delete {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    background: rgba(255, 0, 0, 0.807);
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    /* transform: translate(-50%, -50%); */
+}
+
+.btn_delete:hover {
+    background: red;
+}
+
+.btn_cancel {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    background: rgba(0, 94, 255, 0.949);
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.btn_cancel:hover {
+    background: rgb(0, 94, 255);
+}
+
+.delete_chat_title {
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+}
+
+@media (max-width: 630px) {
+    .name-form {
+        font-size: small;
+    }
+
+    .logo_title {
+        display: none;
+    }
+
+    .chat-img img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+
+    .chat-box_container {
+        width: 100% !important;
+        border-radius: 8px !important;
+        overflow: hidden;
+    }
+
+    .connection-icons {
+        font-size: small;
+        margin-right: 10px;
+    }
+
+    .slog-main {
+        width: 25px;
+    }
+
+    .unread {
+        width: 5%;
+    }
+
+    .main-header {
+        padding: 2px;
+    }
+
+    .css-1jo1f9u-MuiButtonBase-root-MuiIconButton-root {
+        padding-right: 2px !important;
+    }
+
+    .logo_title_header {
+        color: white;
+        float: right;
+        padding: 5px;
+    }
+
+    .chat-block {
+        width: 34%;
+        overflow: auto;
+    }
+
+    .unread-block {
+        position: absolute;
+        min-width: 15px;
+        height: 15px;
+        width: 15px;
+        right: -8px;
+        top: 5px;
+    }
+
+    .chat-item {
+        position: relative;
+    }
+
+    .connections-status-green {
+        display: none;
+    }
+}
+
+@media (min-width: 631px) {
+    .logo_title_header {
+        display: none;
+    }
+}
